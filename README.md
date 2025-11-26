@@ -27,3 +27,17 @@ alembic init migrations
 ```bash
 alembic revision --autogenerate -m "your migration message"
 ```
+
+### Execute migration
+
+(venv)
+```bash
+alembic upgrade head
+```
+### Migration rollback
+
+(venv)
+```bash
+alembic downgrade -1
+# alembic downgrade <VERSION_ID>
+```
